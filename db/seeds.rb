@@ -9,8 +9,9 @@
 Image.destroy_all
 
 Image.create([
-  {url: 'Image One'},
-  {url: 'Image Two'}
+    {url: 'http://lokeshdhakar.com/projects/lightbox2/img/demopage/image-4.jpg'},
+	{url: 'http://lokeshdhakar.com/projects/lightbox2/img/demopage/image-5.jpg'},
+	{url: 'http://lokeshdhakar.com/projects/lightbox2/img/demopage/image-6.jpg'}
 ])
 
 User.destroy_all

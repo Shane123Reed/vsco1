@@ -16,5 +16,12 @@
 </div>
 
 
-
+<% Image.each do |l| %>
+  <ul>
+    <li><%= image_tag l.url %></li>
+    <li><%= button_to "X", image_path(l),
+          method: :delete %></li>
+  </ul>
+<% end %>
+</div>
  
