@@ -1,33 +1,15 @@
-<%= form_for @user do |u|%>
+<%= form_for User.create do |u|%>
 <p>
   <%= u.text_field :email, placeholder: 'email' %>
 </p>
-
 <p>
-  <%= u.label :password, "Password"%>
-  <%= u.text_field :password %>
+  <%= u.text_field :password, placeholder: 'password' %>
 </p>
-
 <p>
-  <%= u.label :password_confirmation, "Confirmation"%>
-  <%= u.text_field :password_confirmation %>
+  <%= u.text_field :password_confirmation, placeholder: 'confirm password' %>
 </p>
-
 <p>
 <%= u.submit %>
 </p>
 
 <%end%>
-
-<%= @user.email %>
-
-<%= form_for User.new, {url:"/authentications", method:"post"} do |u|%>
-<p>
-  <%= u.text_field :email, placeholder: "email" %>
-  <%= u.text_field :password, placeholder: "password" %>
-  <%= submit_tag('login') %>
-</p>
-
-
-
-<% end %>
