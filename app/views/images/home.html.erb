@@ -34,6 +34,18 @@
   </div>
 </div>
 
+<div class="signup">
+
+<h1>SignUp</h1> <%= form_for User.create do |u|%>
+  <p>
+    <%= u.text_field :email, placeholder: 'email' %>
+    <%= u.text_field :password, placeholder: 'password' %>
+    <%= u.text_field :password_confirmation, placeholder: 'confirm password' %>
+    <%= u.submit %>
+  </p>
+
+<%end%>
+</div>
 
 
  
