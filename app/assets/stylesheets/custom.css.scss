@@ -126,5 +126,11 @@ input {
 	margin: 0 auto;
 }
 
+ul {
+	list-style: none;
+	display: inline-block;
+}
 
-
+li {
+	height: 100%;
+}

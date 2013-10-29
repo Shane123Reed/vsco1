@@ -13,7 +13,7 @@ class ImagesController < ApplicationController
 
   def create
   	@images = Image.create(params[:image].permit(:url))
-  	redirect_to :action => "show", :id =>@image._id
+  	redirect_to images_url
   end
 
   def destroy

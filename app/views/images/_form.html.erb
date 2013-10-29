@@ -1,4 +1,4 @@
-<%= form_for @images do |image|%>
+<%= form_for Image.new do |image|%>
 
 <%= image.text_field :url, placeholder: 'url'%>
 <%= image.submit %>

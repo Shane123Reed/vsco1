@@ -1,9 +1,9 @@
-User id: <%= session[:user_id] %>
-<% Image.each do |l| %>
-  <ul>
-    <li><%= image_tag l.url %></li>
-    <li><%= button_to "X", image_path(l),
-          method: :delete %></li>
-  </ul>
-<% end %>
-</div>
+<h1>User id: <%= session[:user_id] %></h1>
+<%= render "images/form" %>
+	<% Image.each do |l| %>
+	  <ul>
+	    <li><%= image_tag l.url %></li>
+	    <li><%= button_to "X", image_path(l),
+	          method: :delete %></li>
+	  </ul>
+	<% end %>
