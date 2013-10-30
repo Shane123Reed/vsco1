@@ -1,6 +1,6 @@
 class ImagesController < ApplicationController
   def index
-    @admin_images = Image.where(:user_id.in => [ '52700baf53686123760c0000' ])
+    @admin_images = Image.where(:iuser_ids.in => [ '52700baf53686123760c0000' ])
     @images = current_user.uimages
   end
 
