@@ -1,9 +1,20 @@
-<h1>User id: <%= session[:user_id] %></h1>
-<%= render "images/form" %>
-	<% Image.each do |l| %>
-	  <ul>
-	    <li><%= image_tag l.url %></li>
-	    <li><%= button_to "X", image_path(l),
-	          method: :delete %></li>
-	  </ul>
-	<% end %>
+<div class="addLookmark">
+	<h1><%= current_user.email %></h1>
+	<%= render "images/form" %>
+</div>
+
+<% @admin_images.each do |l| %>
+  <ul>
+    <li><%= image_tag l.url %></li>
+    <li><%= button_to "X", image_path(l),
+          method: :delete %></li>
+  </ul>
+<% end %>
+
+<% @images.each do |l| %>
+  	<div class="userBin">
+	<%= image_tag l.url %>
+	<div class="userBinLookDelete"><%= button_to "X", image_path(l),
+	          method: :delete %></div>
+	</div>
+<% end %>

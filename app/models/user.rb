@@ -9,6 +9,8 @@ class User
   field :salt, type: String
   field :hashed_password, type: String
 
+  has_and_belongs_to_many :uimages, class_name: 'Image', inverse_of: :iusers
+
   validates :email, presence: true
   validates :email, uniqueness: { case_sensitive: false }
   validates :password, confirmation: true

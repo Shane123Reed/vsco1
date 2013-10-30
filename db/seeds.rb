@@ -6,17 +6,10 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Image.destroy_all
+# Image.destroy_all
 
-Image.create([
-    {url: 'http://lokeshdhakar.com/projects/lightbox2/img/demopage/image-4.jpg'},
-	{url: 'http://lokeshdhakar.com/projects/lightbox2/img/demopage/image-5.jpg'},
-	{url: 'http://lokeshdhakar.com/projects/lightbox2/img/demopage/image-6.jpg'}
-])
-
-User.destroy_all
-
-User.create([
-  {email: 'shane@shane.com'},
-  {email: 'eliot@eliot.com'}
-])
+# Image.create([
+#     {url: 'http://lokeshdhakar.com/projects/lightbox2/img/demopage/image-4.jpg'},
+# 	{url: 'http://lokeshdhakar.com/projects/lightbox2/img/demopage/image-5.jpg'},
+# 	{url: 'http://lokeshdhakar.com/projects/lightbox2/img/demopage/image-6.jpg'}
+# ])

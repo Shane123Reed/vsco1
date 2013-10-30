@@ -134,3 +134,31 @@ ul {
 li {
 	height: 100%;
 }
+
+.userBin {
+	position: relative;
+}
+
+.userBin img {
+	height: 200px;
+	float: left;
+	margin-top: 1px;
+}
+
+.userBinLookDelete {
+	position: relative;
+	float: left;
+	right: 27px;
+	margin-right: -26px;
+	opacity: .2;
+}
+
+.addLookmark {
+	position: relative;
+	width: 350px;
+	left: 10px;
+	margin-top: -20px;
+}
+
+
+
