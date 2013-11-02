@@ -16,7 +16,7 @@ class ImagesController < ApplicationController
   	@image = current_user.uimages.create(params[:image].permit(:url))
   	redirect_to images_url
   end
-
+  
   def destroy
     Image.find(params[:id]).destroy
     redirect_to images_url

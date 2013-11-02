@@ -2,6 +2,8 @@ Vsco::Application.routes.draw do
 
   root to: 'images#home'
 
+  post 'bookmarks' => 'bookmarks#create'
+
   resources :images
 
   resources :users
